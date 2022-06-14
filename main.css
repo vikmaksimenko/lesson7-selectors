@@ -1,0 +1,82 @@
+/* Універсальний селектор */
+* {
+  font-family: "Courier New", monospace;
+}
+
+/* Селектор за типом */
+h1 {
+  color: green;                           /* колір шрифту */
+  background: #EEE;                       /* колір фону (16-ричний формат)*/
+  font-family: "Courier New", monospace;  /* шрифт */
+  height: 50px;                           /* висота елементу */
+  width: 50%;                             /* ширина елементу */
+  border: solid black 5px;                /* стиль границі елементу */
+  padding: 20px;                          /* відступ від границі до контенту */
+  margin: 20px;                           /* відступ від границі до іншого елементу */
+}
+
+/* Селектор за класом */
+.main {
+  color: yellow;
+}
+
+/* Селектор за ідентифікатором */
+#hello {
+  color: green;
+}
+
+/* Селектор за атрибутом */
+[alt='placeholder'] {
+  border: solid red 5px;
+}
+
+/* "Комбінований" селектор*/
+a.link[href*=wikipedia] {
+  background: green;
+}
+
+/* Комбінатор “,” */
+p, h1 {
+  font-style: italic;
+}
+
+/* Комбінатор “ ” */
+.main a {
+  font-size: 32px;
+}
+
+/* Комбінатор “>” */
+.main > a {
+  text-transform: uppercase;
+}
+
+/* Комбінатор “~” */
+h1 ~ a {
+  background-color: coral;
+}
+
+/* Комбінатор “+” */
+p + a {
+  font-weight: 800;
+}
+
+/* Псевдокласи */
+a:visited {
+  background-color: red;
+}
+
+input[type='button']:hover {
+  background-color: blue;
+}
+
+li:first-child {
+  border-top: solid green 5px;
+}
+
+li:last-child {
+  border-bottom: solid green 5px;
+}
+
+li:nth-of-type(3n + 1) {
+  background-color: grey
+}
