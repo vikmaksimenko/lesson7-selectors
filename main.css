@@ -15,6 +15,37 @@ h1 {
   margin: 20px;                           /* відступ від границі до іншого елементу */
 }
 
+/* Селектор за типом (поєднаний із псевдокласом) */
+a:hover {
+  color: yellow;
+}
+
+/* "Комбінований" селектор за типом і класом */
+div.main~div {
+  background-color: #F5F5DD
+}
+
+/* "Комбінований" селектор за ідентифікатором (поєднаний із псевдокласом) */
+#notesList > li:last-child {
+  color: red;
+}
+
+/* "Комбінований" селектор за класом (поєднаний із псевдокласом) */
+.notes li:first-of-type {
+  text-decoration: line-through;
+}
+
+/* "Комбінований" селектор за атрибутом */
+input[name*=Note] {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* "Комбінований" селектор за типом */
+ol, input {
+  font-size: 120%;
+}
+
 /* Селектор за класом */
 .main {
   color: yellow;
