@@ -31,3 +31,11 @@ document.getElementById('loadNotes').addEventListener('click', () => {
   request.open('GET', '_items.html', true);
   request.send();
 })
+
+// Проскролити на початок сторінки за допомогою кнопки
+document.getElementById('scrollToTop').addEventListener('click',() => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
